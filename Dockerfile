@@ -13,6 +13,8 @@ RUN apk --update add --virtual build-dependencies python3 build-base && \
 # Adicione esta linha para limpar o cache do npm
 RUN npm cache clean --force
 
+**ENV PATH="/root/.npm-global/bin:${PATH}"  <-- ADICIONE ESTA LINHA AQUI**
+
 WORKDIR /data
 
 EXPOSE $PORT
