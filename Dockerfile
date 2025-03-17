@@ -21,4 +21,4 @@ EXPOSE $PORT
 
 ENV N8N_USER_ID=root
 
-CMD sh -c "echo 'PATH is: $PATH' && ls -l /root/.npm-global/bin && export N8N_PORT=$PORT && n8n start"
+CMD sh -c "echo 'TESTE CMD DOCKERFILE EXECUTANDO'"
